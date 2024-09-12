@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body::before { /* Padrão Body */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background-dragons.svg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: blur(15px); 
+    z-index: -1;
+}
+.organizar {
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.titulo{
+    font-size: clamp(40px, 2vh , 90px);
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.938);
+    
+}
+
+button#b1{
+
+    background-color: rgb(0, 174, 255);
+    border-radius: 0.75em;
+    color: white;
+    font-size: clamp(14px,2vh,30px);
+}
+
+button#b1:hover{
+    background-color:  #32e994;
+}
+button#b2:hover{
+    background-color:  rgb(0, 255, 179);
+}

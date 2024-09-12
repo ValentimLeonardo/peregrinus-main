@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+     <main class="principal d-flex flex-column align-items-center text-center ">
+        <div class="container">
+            <section id="titulo">
+                <h1 class="t1 titulo-grande">Cadastro</h1>
+            </section>
+            <section id="principal" class="my-4">
+                <form>
+                    <fieldset class="cad">
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label titulo-edit">Nome:</label>
+                                <input type="text" class="form-control" name="nome" id="nome">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label titulo-edit">CPF:</label>
+                                <input type="text" class="form-control" name="cpf" id="cpf">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label titulo-edit">Email:</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                    </fieldset>
+                </form>
+                <div><h2 class="t2 my-4 titulo-grande">Endereço</h2></div>
+                <form>
+                    <fieldset class="cad">
+                        <div class="mb-3">
+                            <label class="form-label titulo-edit">Logradouro:</label>
+                            <input type="text" class="form-control" name="logradouro" id="logradouro">
+                        </div>
+    
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-4">
+                                <label class="form-label titulo-edit">Número:</label>
+                                <input type="number" class="form-control" name="numero" id="numero">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label titulo-edit">Bairro:</label>
+                                <input type="text" class="form-control" name="bairro" id="bairro">
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <label class="form-label titulo-edit">Cidade:</label>
+                                <input type="text" class="form-control" name="cidade" id="cidade">
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label class="form-label titulo-edit">Complemento:</label>
+                            <input type="text" class="form-control" name="complemento" id="complemento">
+                        </div>
+                    </fieldset>
+                </form>
+                <div><h2 class="t2 my-4 titulo-grande">Dados do Cartão</h2></div>
+                <form>
+                    <fieldset class="cad">
+                        <div class="mb-3">
+                            <label class="form-label titulo-edit">Número do Cartão:</label>
+                            <input type="text" class="form-control" name="numero_cartao" id="numero_cartao">
+                        </div>
+    
+                        <div class="row mb-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label titulo-edit">Validade:</label>
+                                <input type="text" class="form-control" name="validade" id="validade">
+                            </div>
+                            
+                            <div class="col-12 col-md-6">
+                                <label class="form-label titulo-edit">Titular do cartão:</label>
+                                <input type="text" class="form-control" name="titular" id="titular">
+                            </div>
+                        </div>
+    
+                        <div class="col-6 col-md-2">
+                            <label class="form-label titulo-edit">Security Code:</label>
+                            <input type="number" class="form-control" name="code" id="code">
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="final1">
+                
+                <a id="botao" class="btn btn-primary titulo-grande" href="../pages/index.html/" role="button">Salvar</a>
+                <a class="botao2 btn btn-danger ms-2 titulo-grande" href="#" role="button">Excluir conta</a>
+            </section>
+        </div>
+    </main>
+    <!--<script src="scriptcad.js"></script> -->
+    <script src="../scripts/headerFooter.js"></script>
+    
+</body>
+</html>

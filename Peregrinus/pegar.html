@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        .produto {
+            border: 1px solid #ddd;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .produto img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Produtos</h1>
+    <div id="produtos"></div>
+
+    <script>
+        // Função para buscar e exibir produtos
+        function buscarProdutos() {
+            fetch('http://127.0.0.1:3307/produto')
+                .then(response => response.json())
+                .then(data => {
+                    const produtosDiv = document.getElementById('produtos');
+                    produtosDiv.innerHTML = '';
+                    data.forEach(produto => {
+                        const produtoDiv = document.createElement('div');
+                        produtoDiv.className = 'produto';
+
+                        produtoDiv.innerHTML = `
+                            <h2>${produto.nome}</h2>
+                            <img src="data:image/jpeg;base64,${produto.foto}" alt="${produto.nome}" />
+                            <p>${produto.descricao}</p>
+                            <p>Preço: R$ ${produto.valor.toFixed(2)}</p>
+                        `;
+
+                        produtosDiv.appendChild(produtoDiv);
+                    });
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar produtos:', error);
+                });
+        }
+
+        // Chama a função para buscar e exibir produtos quando a página carrega
+        document.addEventListener('DOMContentLoaded', buscarProdutos);
+    </script>
+</body>
+</html>

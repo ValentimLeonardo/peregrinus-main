@@ -1,0 +1,168 @@
+*,*::after,*::before{box-sizing: border-box;}
+        
+
+body::before { /* Padrão Body */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--cor-background-color);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: blur(15px); 
+    z-index: -1;
+}
+
+
+
+  @media (max-width: 768px) { /* carrossel img */
+    .carousel-inner {
+        min-height: 100px;
+        
+       
+    }
+}
+
+@media (max-width: 576px) { /* carrossel img */
+    .carousel-inner {
+        min-height: 100px; 
+    }
+} 
+
+.carousel-inner img { /* ínicio sessão destaques carrossel */
+width: 100%;
+height: 300px;
+background-color: var(--cor-background-color);
+/* object-fit: cover; /* Faz a imagem ser esticada para completar o container pai */
+}
+.carousel-borda{
+    border: 2px solid var(--cor-bordas)
+}
+.carousel-item p{
+color: aqua;
+font-size: 1em;
+background-color: black;
+overflow: hidden; /* cortar o texto q passar */
+white-space: nowrap;  /* evitar quebra de linha */
+text-overflow: ellipsis; /* colocar ... ao invés de quebrar linha */
+border-radius: 0 0 5px 5px;
+}
+.fundo-destaque{ /* background geral dos destaques */
+background-color: #2900dd6b;
+
+}
+.titulo-destaques { /* titulos dos destaques */
+color: #ffffff;
+}
+.carousel-item p:hover{
+background-color: #ffffff;
+color: var(--cor-background-login2);
+cursor: pointer;
+}
+.mudar-paginas{
+    text-decoration: none;
+}
+/* Fim sessão destaques carrossel */
+
+#Sobre-nos-div-Auxiliar {
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre os itens */
+}
+
+#Sobre-nos-div-Auxiliar .col {
+    flex: 1; 
+    margin: 10px; 
+}
+#Sobre-nos-div-Auxiliar .col header {
+    margin: 0; 
+    padding: 10px; 
+}
+#Sobre-nos h2{
+    color: #ffffff;
+    font-size: larger;
+}
+#Sobre-nos-historia, #Sobre-nos-valores, #Sobre-nos-missao{
+    
+    color: var(--cor-texto-color);
+    border-radius: 5px;
+    font-size: larger;
+    
+}
+#Sobre-nos{
+    background-color: var(--cor-background-color);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 2vh;
+}
+
+
+
+
+
+
+.produto {
+    border: 1px solid var(--cor-background-login2);
+    margin: 2%;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.produto img {
+    max-width: 70%;
+    height: auto;
+   
+}
+#produtos-container{
+    overflow-y: auto;
+
+}
+#produtos{
+    border-radius: 5px;
+    background-color: var(--cor-background-color);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 2vh;
+  
+}
+
+.bloco-dos-produtos{
+    padding: 5%;
+}
+.produto h3 {
+    color: var(--cor-texto-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: smaller;
+}
+.produto p{
+    color: var(--cor-preco);
+    font-size: large;
+    font-weight: bold;
+
+}
+.filtros{
+    border-radius: 5px;
+    background-color: var(--cor-container-color);
+    color: var(--cor-texto-color);
+}
+.produto a{
+    text-decoration: none;
+}
+.produto:hover{
+    background-color: var(--cor-background-login1);
+    border-color: var(--cor-background-login2);
+    
+}
+input[type="checkbox"] {
+    border: 1px solid var(--cor-background-login2);
+    width: 16px; 
+    height: 16px;
+}
+
+.newsletter-bg{
+    background-color: var(--cor-header-background-color);
+}

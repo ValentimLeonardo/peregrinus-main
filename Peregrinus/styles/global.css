@@ -1,0 +1,20 @@
+:root{
+    --cor-background-color: rgb(247, 230, 209);
+    --cor-background-login1: rgb(228, 171, 102);
+    --cor-background-login2: rgb(168, 121, 63);
+    --cor-texto-color: #020202;
+    --cor-titulo-color: #000000;
+    --cor-blocos-color: #000000;
+    --cor-container-color: ;
+    --cor-header-background-color: #000000;
+    --cor-header-items-color: #00AFEF;
+    --cor-footer-background-color: #000000;
+    --cor-footer-items-color: #00AFEF;
+    --cor-hover-header: #ffffff;
+    --cor-bordas: #000000;
+    --cor-hover-produtos: #00AFEF;
+    --cor-body: #cec8c8;
+    --cor-preco: rgb(0, 0, 0);
+    
+    
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body::before { /* Padrão Body */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background-dragons.svg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: blur(15px); 
+    z-index: -1;
+}
+
+.organizar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 28vw;
+    padding-right: 28vw;
+}
+.titulo{
+    font-size: 3em;
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.938);
+    padding-bottom: 4vh;
+}
+div#principal{
+    height: 78vh;
+    width: 100vh;
+    background-color: #0b2475;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: #f3f5f4;
+}
+div#rastreamento{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+div#codigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img#entrega{
+    width: 20vw;
+    height: 20vh;
+}
+div#texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+h2#titulo2{
+    font-size: 1.6em;
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.938);
+    padding-left: 5vw;
+}
+p#aleatorio{
+    font-size: 1.2em;
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.938);
+}
+div#lista{
+    display: flex;
+    align-items: center;
+    gap: none;
+}
+img#check{
+    width: 25vh;
+    height: 25vw;
+}
+ul#l{
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.938);
+    list-style-type: none;
+}
+li{
+    font-size: 0.8em;
+}
+div#lista1{
+    padding-right: 7vw;
+}
+button#b1{
+    height: 8vh;
+    width: 30vw;
+    background-color: rgb(0, 174, 255);
+    border-radius: 10vh;
+    color: white;
+    font-size: 1.2em;
+}
+
+button#b1:hover{
+    background-color:  #32e994;
+}

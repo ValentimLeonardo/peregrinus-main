@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body::before { /* Padrão Body */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    background-color: var(--cor-body);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: blur(15px); 
+    z-index: -1;
+}
+ 
+.principal {
+    min-height: 90vh; /* Garante que o main ocupe toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cad {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--cor-container-color);
+    border-radius: .25rem;
+    background-color: var(--cor-container-color);
+}
+#botao{
+
+    margin: 1rem;
+}
+#botao2{
+    margin-top: 1rem;
+} 
+.titulo-edit{
+    color: var(--cor-texto-color) ;
+}
+.titulo-grande{
+    color: var(--cor-texto-color);
+}
+input[type="file"].form-control-file {
+    width: auto;
+    display: inline;
+ 
+ 
+  
+}
+input[type="text"], 
+input[type="number"],  
+textarea, 
+select {
+    border: 1px solid var(--cor-container-color);
+}
+#descricao, #categoria{
+    border: 1px solid var(--cor-container-color);
+}

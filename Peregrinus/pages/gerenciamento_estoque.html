@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/gerenciamento_estoque.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <title>Gerenciamento de estoque</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title text-light text-center p-4">
+            <header><h1 id="texto">Gerenciamento de estoque</h1></header>
+        </div>
+
+        <div class="container-sm">
+
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Nome do produto" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Filtrar</button>
+                  </form>
+                </div>
+              </nav> <!--barra de pesquisa para filtar produtos-->
+
+            <div class="table-responsive">
+                <table class="table align-middle  table-bordered">
+                    <thead>
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Nome do produto</th>
+                          <th scope="col">Imagem</th>
+                          <th scope="col">Descrição</th>
+                          <th scope="col">Valor</th>
+                          <th scope="col">Quantidade</th>
+                          <th scope="col">Edições</th>
+                        </tr> <!--definição de colunas-->
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Jogo de cartas</td>
+                            <td>
+                                <img src="../images/venda2.jpg" alt="Imagem do produto">
+                            </td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste, tempore sunt facilis hic aliquam deserunt cum cupiditate doloribus fugit nobis placeat pariatur.</td>
+                            <td>R$ 99,90</td>
+                            <td>100</td>
+                            <td><a href="#" class="link-dark">Editar</a></td>
+                          </tr> <!--produto 1-->
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jogo de rpg</td>
+                            <td>
+                                <img src="../images/prod3.jpg" alt="Imagem do produto">
+                            </td>
+                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iste, tempore sunt facilis hic aliquam deserunt cum cupiditate doloribus fugit nobis placeat pariatur.</td>
+                            <td>R$ 99,90</td>
+                            <td>60</td>
+                            <td><a href="#" class="link-dark">Editar</a></td>
+                          </tr> <!--produto 2-->
+                      </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/headerFooter.js"></script>
+</body>
+</html>

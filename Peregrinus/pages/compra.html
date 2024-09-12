@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/compra.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Finalização de Compra</title>
+</head>
+<body>
+    <main id="compras" class="container"> 
+        
+        <div id="principal" class="container m-3 ">
+            <header><h1 class="final text-center">Finalizar Compra</h1></header>
+            <div class="container-fluid" id="conteudo-divisao">
+                    <div class="row justify-content-center align-items-center"  id="produtos-compra">
+                        <div class="produto col-12 col-md-6 col-lg-4" id="produtoUm">
+                            <img src="../images/prod1.jpg" alt="produto2" class="produtos">
+                            <h2 class="tproduto">Tabuleiro</h2>
+                            <p class="preco">R$ 59,00</p>
+                            <div class="botao" id="idbotao">
+                                <button type="button" class="btn btn-danger botao-menos" onclick=contador()>-</button>
+                                <p class="contador" id="contador">0</p>
+                                <button type="button" class="btn btn-success botao-mais" onclick=contador()>+</button>
+                            </div>
+                        </div>
+                        <div class="produto col-12 col-md-6 col-lg-4" id="produtoDois">
+                            <img src="../images/prod1.jpg" alt="produto2" class="produtos">
+                            <h2 class="tproduto">Tabuleiro</h2>
+                            <p class="preco">R$ 59,00</p>
+                            <div class="botao">
+                                <button type="button" class="btn btn-danger botao-menos" onclick="contador()">-</button>
+                                <p class="contador ">0</p>
+                                <button type="button" class="btn btn-success botao-mais" onclick="contador()">+</button>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="row" id="selecionar">
+                    <div class="col-12 forma">
+                        <h2 class="h">Forma de Pagamento</h2>
+                        <div id="descricao" class="d-flex align-items-center justify-content-start">
+                            <i class="fa-solid fa-receipt fa-2x" id="boleto"></i>
+                            <p class="normal m-1" id="querover">Pagamento via Boleto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 " id="d2">
+                    <div class="col-12 col-md-6 text-center mb-3" id="entrega">
+                        <img src="../images/entrega.svg" alt="entregadora" id="ent" class="mb-2">
+                        <div id="img">
+                            <p class="normal">Entrega premium</p>
+                            <p class="normal">Receba amanhã - R$ 9,90</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center" id="valores">
+                        <h2 id="preco-total">Total de Produtos: R$ 0</h2>
+                        <h2 id="frete">Frete: R$ 9,90</h2>
+                        <h2 id="Desconto">Desconto: R$ 0,00</h2>
+                    </div>
+                </div>
+                <div class="row" id="finalizado">
+                    <div class="col-12 text-center">
+                        <p id="pagamento">Total a pagar: R$ 0</p>
+                        <a href="../pages/status_positivo.html" class="btn btn-primary mb-2">Confirmar pagamento</a>
+
+                    </div>
+                </div>
+            </div></div></main>   
+    <script src="../scripts/headerFooter.js"></script>
+    <script src="../scripts/compra.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body::before { /* Padrão Body */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background-dragons.svg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: blur(15px); 
+    z-index: -1;
+}
+
+.principal {
+    min-height: 100vh; /* Garante que o main ocupe toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.blocos{
+    background-color: blue;
+}
+#imag img {
+    max-width: 40%;
+    height: auto;
+}
+#p1 {
+    margin-top: 20px;
+}
+#p1 button {
+    margin: 10px;
+}
+
+@media (max-width: 576px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+    #p1 button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

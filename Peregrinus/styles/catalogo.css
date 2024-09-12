@@ -1,0 +1,73 @@
+*,*::after,*::before{box-sizing: border-box;}
+        
+
+body::before { /* Padrão Body */
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-background-color);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: blur(15px); 
+    z-index: -1;
+}
+
+.produto {
+    border: 1px solid var(--cor-bordas);
+    height: 20%;
+    margin: 2%;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.produto img {
+    max-width: 100%;
+    height: auto;
+   
+}
+#produtos-container{
+    overflow-y: auto;
+    
+    
+}
+#produtos{
+    border-radius: 5px;
+    background-color: var(--cor-container-color);
+    border: 1px solid var(--cor-bordas)
+}
+
+.bloco-dos-produtos{
+    padding: 5%;
+}
+.produto h3 {
+    color: var(--cor-texto-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: smaller;
+}
+.produto p{
+    color: var(--cor-preco);
+    font-weight: bold;
+
+}
+.filtros{
+    border-radius: 5px;
+    background-color: var(--cor-container-color);
+    color: var(--cor-texto-color);
+}
+.produto a{
+    text-decoration: none;
+}
+.produto:hover{
+    background-color: var(--cor-hover-produtos);
+}
+input[type="checkbox"] {
+    border: 1px solid #000000;
+    width: 16px; 
+    height: 16px;
+}
